@@ -25,3 +25,5 @@ The main purpose of my project was understanding debouncing techniques, as well 
   To conclude, this little homework was a very good way to understand debouncing, working with millis() and understanding how to make multiple parts of the circuit run simultaneously. 
 
 Here's the video where you can see how my project works: https://youtu.be/d4HAe15tKeQ?si=pGSumkI3E9IJJzQi
+
+![Homework#3](https://github.com/emadrg/IntroductionToRobotics/blob/main/Homework3_elevator_simulator.jpeg)
