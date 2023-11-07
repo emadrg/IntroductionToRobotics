@@ -41,3 +41,7 @@ For the code, I started by defining how the joystick movements should be interpr
 Regarding the 7-segment display, I realized that I needed a blink function since the selected segment should blink regardless of its state. The blink function was simple and effective. However, I encountered a challenge: how could I make the display remember the state of its segments when I pressed the button? It took some trial and error, but I concluded that I needed a separate array to keep track of the segment states. With this insight, for every button press, the selected element in the array would change its state from LOW to HIGH or vice versa, and then I could display everything. By separating the blinking and the states, they were not influenced by each other, and the project worked as intended, and I was finally able to sleep.
 
 That being said, this is my small project. I believe it turned out quite well, and it helped me understand how to separate different parts of the code to achieve the desired behavior. Even though it took more time than I initially expected, this is the first robotics project on which I had to perform debugging.
+
+Here's the video where you can see how my project works:https://youtu.be/bqevUxLTv-4?si=czq3UiVVwehYA0jo
+
+![Homework#4](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework4_7_segment_display_drawing.jpeg)
