@@ -27,3 +27,17 @@ The main purpose of my project was understanding debouncing techniques, as well 
 Here's the video where you can see how my project works: https://youtu.be/d4HAe15tKeQ?si=pGSumkI3E9IJJzQi
 
 ![Homework#3](https://github.com/emadrg/IntroductionToRobotics/blob/main/Homework3_elevator_simulator.jpeg)
+
+
+# Homework 4
+7 segment display drawing
+
+The purpose of this homework was to control a 7-segment display using a joystick. The initial position should be on the decimal point (DP), and the current position should always blink, irrespective of whether the segment is on or off. The joystick is used to move to neighboring positions, and a short press of the button toggles the segment state from ON to OFF or from OFF to ON. Easy, right? Well, I initially thought so, but in reality, I spent quite some time on what seemed like an easy project.
+
+For the physical part of the project, I used a 7-segment display to which I connected eight resistors of 330 Ohms, one for each segment (even though we also have the decimal point, so the name "7-segment display" is a lie; there are eight segments). I then connected each segment to the corresponding pins on the Arduino Uno, making sure to connect the GND of the display to the board's GND as well. Lastly, I connected the joystick with two connections for Vin and GND, and three connections for the X and Y axes, and also the button. The joystick has an internal resistor, so that's none of my concern. The circuit itself was relatively easy to create, and now we're ready to dive into the code.
+
+For the code, I started by defining how the joystick movements should be interpreted. I determined the threshold values that indicate a movement on the X or Y axis sufficient to be considered one of four directions: UP, DOWN, LEFT, or RIGHT. 
+
+Regarding the 7-segment display, I realized that I needed a blink function since the selected segment should blink regardless of its state. The blink function was simple and effective. However, I encountered a challenge: how could I make the display remember the state of its segments when I pressed the button? It took some trial and error, but I concluded that I needed a separate array to keep track of the segment states. With this insight, for every button press, the selected element in the array would change its state from LOW to HIGH or vice versa, and then I could display everything. By separating the blinking and the states, they were not influenced by each other, and the project worked as intended, and I was finally able to sleep.
+
+That being said, this is my small project. I believe it turned out quite well, and it helped me understand how to separate different parts of the code to achieve the desired behavior. Even though it took more time than I initially expected, this is the first robotics project on which I had to perform debugging.
