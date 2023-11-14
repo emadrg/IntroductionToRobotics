@@ -45,3 +45,16 @@ That being said, this is my small project. I believe it turned out quite well, a
 Here's the video where you can see how my project works:https://youtu.be/bqevUxLTv-4?si=czq3UiVVwehYA0jo
 
 ![Homework#4](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework4_7_segment_display_drawing.jpeg)
+
+
+
+
+# Homework 4
+4-7-segment display stopwatch
+
+This Arduino project is designed to create a digital stopwatch timer with lap functionality using a 4-digit 7-segment display and a shift register. The timer can be started, paused, and reset using physical buttons. Additionally, the user can save lap times during the timer operation. The circuit uses interrupts to handle button presses and features debouncing to ensure accurate input. The 7-segment display is multiplexed to show the current time or lap time, and the lap times are stored in an array for later reference. The project includes code for handling the display, button inputs, and timing functionality. It provides a versatile and customizable platform for creating a digital stopwatch timer with lap recording capabilities.
+
+The phisycal circuit looks a bit complicated because of the wires, but this is the "light" version, thanks to the shift register which allows us to make far fewer connections. I made sure to correctly connect all the wires of the display to the register, as well as connecting everything necessary to the Arduino board. The 3 buttons each require a 1k Ohms resistor, as well as Arduino, 5V and GND connections. 
+
+This project helped me understand how the register works, since it makes the curcuit much lighter, allowing fewer connections. 
+Here's the video where you can see how my project works: https://youtu.be/1FbD3kzXKlc?feature=shared
