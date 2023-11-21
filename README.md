@@ -59,10 +59,10 @@ The phisycal circuit looks a bit complicated because of the wires, but this is t
 This project helped me understand how the register works, since it makes the curcuit much lighter, allowing fewer connections. 
 Here's the video where you can see how my project works: https://youtu.be/1FbD3kzXKlc?feature=shared
 
-![Homework#4](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework4_stopwatch.jpeg)
+![Homework#5](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework4_stopwatch.jpeg)
 
 
-# Homework 5
+# Homework 6
 Pseudo-smart environment monitor
 
 This project has the functionality of monitoring the environment, using a ultrasonic sensor (measuring distance) and a LDR sensor (measuring light), being able to interact with it by using a menu. I will paste the instructions given by my proffesor, since I can't find a better way to summarize the purpose of this project: "This system will utilize various sensors to gather environmental data, log this data intoEEPROM, and provide both visual feedback via an RGB LED and user interaction through a Serial Menu.  The project focuses on integrating sensor readings, memory management, Serial Communication and the general objective of building a menu."
@@ -102,5 +102,6 @@ Lastly, I created a sensors() function. This is a function that combines the beh
 This project seemed pretty overwhelming for me at first, especially because of the menu, but I think it turned out pretty well in the end. What made the implementation much easier was creating a lot of functions, since they allowed me to take everything "one by one", instead of having a lot of code in the loop() and be impossible to debug. 
 
 
-![Homework#4](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework6_environment_monitor.ino)
+![Homework#6](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework6_environment_monitor.jpg)
+
 Here's the video where you can see how my project works:
