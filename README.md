@@ -100,3 +100,7 @@ What I firstly needed to do, was to find a way to insert multiple values into th
 Each submenu has its own options, which have their own functions as well. These functions modify certain parameters, according to what the user inputs, in order to modify the fucntionality of the sensors.
 Lastly, I created a sensors() function. This is a function that combines the behaviour of both sensors, based on the parameters I can modify. These parameters are initialized with default values, so that the sensors can work just fine even if I only modified a few of the parameters, or maybe none. 
 This project seemed pretty overwhelming for me at first, especially because of the menu, but I think it turned out pretty well in the end. What made the implementation much easier was creating a lot of functions, since they allowed me to take everything "one by one", instead of having a lot of code in the loop() and be impossible to debug. 
+
+
+![Homework#4](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework6_environment_monitor.ino)
+Here's the video where you can see how my project works:
