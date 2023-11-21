@@ -102,6 +102,6 @@ Lastly, I created a sensors() function. This is a function that combines the beh
 This project seemed pretty overwhelming for me at first, especially because of the menu, but I think it turned out pretty well in the end. What made the implementation much easier was creating a lot of functions, since they allowed me to take everything "one by one", instead of having a lot of code in the loop() and be impossible to debug. 
 
 
-![Homework#6](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework6_environment_monitor.jpg)
+![Homework#6](https://github.com/emadrg/IntroductionToRobotics/blob/main/Homework6_environment_motinor.jpeg)
 
 Here's the video where you can see how my project works:
