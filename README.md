@@ -60,3 +60,43 @@ This project helped me understand how the register works, since it makes the cur
 Here's the video where you can see how my project works: https://youtu.be/1FbD3kzXKlc?feature=shared
 
 ![Homework#4](https://github.com/emadrg/IntroductionToRobotics/blob/main/homework4_stopwatch.jpeg)
+
+
+# Homework 5
+Pseudo-smart environment monitor
+
+This project has the functionality of monitoring the environment, using a ultrasonic sensor (measuring distance) and a LDR sensor (measuring light), being able to interact with it by using a menu. I will paste the instructions given by my proffesor, since I can't find a better way to summarize the purpose of this project: "This system will utilize various sensors to gather environmental data, log this data intoEEPROM, and provide both visual feedback via an RGB LED and user interaction through a Serial Menu.  The project focuses on integrating sensor readings, memory management, Serial Communication and the general objective of building a menu."
+I'll briefly go through the menu, sebmenus and their functionality:
+
+1. Sensor settins
+	1.1. Sensors sampling interval (the interval at wich the sensors should gather data from the environment)
+	1.2. Ultrasonic alert threshold (here you can insert the minimum value that is "okay" for the ultrasonic sensor. See 4.2. for more info)
+	1.3. LDR alert threshold (same as above, but for the LDR sensor)
+	1.4. Back (to the main manu, not to the time when the most difficult task we got at school was to color inside the lines :') )
+
+2. Reset logger data
+	2.1. YES (resets all the logged data)
+	2.2. NO 
+
+3.System status
+	3.1. Current sensors readings (displays the current sensor readings continuousely (from both sensors), until you press a random key)
+	3.2. Current sensors settings (displays the settings made for the sesnsors data, but if not yet modified it displays the default values)
+	3.3. Displays logged data (aka last 10 sensor readings)
+	3.4. Back
+
+4. RGB Led control
+	4.1. Manual Color control (select the desired color for the LED: red, green, blue or off)
+	4.2.Toggle Automatic mode ON/OFF (If ON: if the read values are bigger than the min threshold, the LED is geen, if not the LED is red and you also get a sound warning from the buzzer. If OFF, nothing special happens)
+	4.3.Back
+
+Sounds cool, right? Yeah sure, but the implementation was a bit of a coding challange. The physical setup itself was a piece of cake, since I used the following:
+-ultrasonic sensor
+-LDR sensor (with a 10K Ohms resistor)
+-buzzer
+-RGB Led (with 3 330 Ohms resistors, one for each color)
+-wires as needed
+Okay so now that we got the circuit part straight, let's dive in into the scary part: the code.
+What I firstly needed to do, was to find a way to insert multiple values into the serial monitor, one by one, in order to navigate the cascading menu. This was the most difficult part for me since I had to work with EEPROM, in order to store and read the inputs, but in the end I got the idea to create a reading function to do just that, and it worked wonderfully (thank God). After that, I created a function that displays the main menu and the submenus, and using a "switch" structure in the loop() function, I was able to display the correct submenu, based on the input. 
+Each submenu has its own options, which have their own functions as well. These functions modify certain parameters, according to what the user inputs, in order to modify the fucntionality of the sensors.
+Lastly, I created a sensors() function. This is a function that combines the behaviour of both sensors, based on the parameters I can modify. These parameters are initialized with default values, so that the sensors can work just fine even if I only modified a few of the parameters, or maybe none. 
+This project seemed pretty overwhelming for me at first, especially because of the menu, but I think it turned out pretty well in the end. What made the implementation much easier was creating a lot of functions, since they allowed me to take everything "one by one", instead of having a lot of code in the loop() and be impossible to debug. 
