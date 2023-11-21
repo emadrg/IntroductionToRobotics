@@ -68,7 +68,7 @@ Pseudo-smart environment monitor
 This project has the functionality of monitoring the environment, using a ultrasonic sensor (measuring distance) and a LDR sensor (measuring light), being able to interact with it by using a menu. I will paste the instructions given by my proffesor, since I can't find a better way to summarize the purpose of this project: "This system will utilize various sensors to gather environmental data, log this data intoEEPROM, and provide both visual feedback via an RGB LED and user interaction through a Serial Menu.  The project focuses on integrating sensor readings, memory management, Serial Communication and the general objective of building a menu."
 I'll briefly go through the menu, sebmenus and their functionality:
 
-1. Sensor settins
+1. Sensor settings
 	1.1. Sensors sampling interval (the interval at wich the sensors should gather data from the environment)
 	1.2. Ultrasonic alert threshold (here you can insert the minimum value that is "okay" for the ultrasonic sensor. See 4.2. for more info)
 	1.3. LDR alert threshold (same as above, but for the LDR sensor)
