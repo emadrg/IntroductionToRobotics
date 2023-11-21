@@ -104,4 +104,4 @@ This project seemed pretty overwhelming for me at first, especially because of t
 
 ![Homework#6](https://github.com/emadrg/IntroductionToRobotics/blob/main/Homework6_environment_motinor.jpeg)
 
-Here's the video where you can see how my project works:
+Here's the video where you can see how my project works: https://youtu.be/QGPPslQAHVE?si=MYaJMI3td7oAE4R2
