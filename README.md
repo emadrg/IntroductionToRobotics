@@ -105,3 +105,18 @@ This project seemed pretty overwhelming for me at first, especially because of t
 ![Homework#6](https://github.com/emadrg/IntroductionToRobotics/blob/main/Homework6_environment_motinor.jpeg)
 
 Here's the video where you can see how my project works: [https://youtu.be/QGPPslQAHVE?si=MYaJMI3td7oAE4R2](https://youtu.be/QGPPslQAHVE?si=MYaJMI3td7oAE4R2)https://youtu.be/QGPPslQAHVE?si=MYaJMI3td7oAE4R2
+
+
+
+# Homework 7
+Mini matrix game
+
+This little project is the beginning of my matrix game. For this homework, I made sure to correctly connect the 8x8 matrix to the driver, as well as connecting the joystick to the whole project. The idea of this game was pretty simple: you have a player (a LED that blinks) that can shoot different so called 'obstacles'. As for now, the game doesn't really end and it doesn't get competitive either, but it's a good start for what's about to come. 
+The main challange for this was correctly connecting the matrix to the driver, since there are a lot of wires and one wrong connection can make everything not work anymore. After I made sure that the hardware was working just fine, I could start writing my code. 
+The obstacles were defined by simply creating a matrix that would contain them, so nothing fancy over here. I then needed a player that can shoot lasers up in order to destroy the obstacles, so I created functions for the player as well as the laser shooting. The most difficult part was implementing the logic for displaying the obstacles. What I wanted to happen was to display the obstacles one by one, but only after they were destroyed. What I mean by this is that the 2nd obstacle would only be displayed after the 1st was completely destroyed (all the leds in the obstacle would turn off after being shot). The player's movement on the matrix was done by up-cycling the code from one of my previous assignments, which i added to a separate function for a more "clean" aspect of the code.
+I'm sorry if this homework is a little disappointing since it's not that interesting for the user (the player of the game), but it was useful to me as a first step to a more complex game. 
+
+
+![Homework#6](https://github.com/emadrg/IntroductionToRobotics/blob/main/Homework_7_mini_matrix_game.jpeg)
+
+Here's the video where you can see how my project works: https://youtu.be/dmLaou6sOoU?si=2ul3Njsd1MAaARNR
