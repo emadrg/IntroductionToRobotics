@@ -120,3 +120,17 @@ I'm sorry if this homework is a little disappointing since it's not that interes
 ![Homework#6](https://github.com/emadrg/IntroductionToRobotics/blob/main/Homework_7_mini_matrix_game.jpeg)
 
 Here's the video where you can see how my project works: https://youtu.be/dmLaou6sOoU?si=2ul3Njsd1MAaARNR
+
+
+
+#Homework 8 
+Matrix checkpoint
+
+This project comes as an addition to the last one, since Homework #7 was the starting point. The main purpose of this project was to implement a menu on the LCD, that the user can navigate using a joystick and makling selections by pressing on the joystick. 
+I implemented a main menu using a list, every displayable option being reffered to as main_menu[index]. This is helpful, since I only displayed one option at a time on the LCD, and when I press the joystick button the program knows what I chose, thanks to the index. Depending on the option chosen, the game can start (first you have to select a difficulty), or you can adjust the LCD brightness and the matrix brightness (haven't yet implemented these, since I'm having issues implementing the submenus), or displaying some information in the "About" section.
+I also implemented a game over functionality, so the program knows when the game ends. The idea of this game is to shoot as many LEDS from the obstacles as possible, while they're dissapearing at a certain rate, depending on the difficulty chosen, therefore the game ends when there is an obstacle that has completely dissapeared by itself and the player hasn't shot any LEDs from that specific obstacle. During gameplay, the LCD displays the number of LEDs that have been shot in total, which will come in handy later on, when implementing a highscore option.
+Right now, this project seems a little unstable to me, there are a lot of stuff that I need to fix. For now, my #1 priority is trying to fix the submenus, since they don't take any inputs and I can't modify the LCD or the matrix brightness just yet.
+
+The setup is the same as last time, so I didn't take a new picture.
+Here's the video where you can see how my project works: https://youtu.be/8JqMgnbWhA8
+
