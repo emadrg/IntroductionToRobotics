@@ -123,7 +123,7 @@ Here's the video where you can see how my project works: https://youtu.be/dmLaou
 
 
 
-#Homework 8 
+# Homework 8 
 Matrix checkpoint
 
 This project comes as an addition to the last one, since Homework #7 was the starting point. The main purpose of this project was to implement a menu on the LCD, that the user can navigate using a joystick and makling selections by pressing on the joystick. 
